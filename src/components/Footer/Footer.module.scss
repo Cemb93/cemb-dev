@@ -1,0 +1,40 @@
+.footers {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+  gap: 10px;
+  border: solid gray 3px;
+  margin: 15px;
+}
+
+.download_btn {
+  border: solid green 3px;
+  position: relative;
+  display: inline-block;
+  color: red;
+  outline: solid 2px blue;
+  padding: 30px 60px;
+  overflow: hidden;
+  transition: color 1s;
+}
+
+.download_btn:hover {
+  color: green;
+}
+
+.download_btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: brown;
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+
+.download_btn:hover::before {
+  transform: scaleX(1) skewX(35deg);
+}

@@ -1,32 +1,43 @@
 // import React from 'react';
 import github from '../../Images/Github.png';
 import linkedIn from '../../Images/LinkedIn.png';
+import style from './Footer.module.scss';
 
 export const Footer = () => {
   const year = new Date().getFullYear();
   return (
-    <div>
-      <div>
-        <button>
-          <a href='is pendding' download='CV PDF' >Descargar CV</a>
-        </button>
-      </div>
+    <div className={style.footers} >
+      <a href='is pendding' download='CV PDF' >
+        <div>
+          <button className={style.download_btn} >
+            Descargar CV
+          </button>
+        </div>
+      </a>
       <br />
       <div>
         <a href='https://github.com/Cemb93' >
-          <img src={github} alt='img not found' width='50px' height='50px' />
+          <div>
+            <img src={github} alt='img not found' width='50px' height='50px' />
+          </div>
         </a>
         <a href='https://www.linkedin.com/in/carlos-mart%C3%ADnez-7491776a/' >
-          <img src={linkedIn} alt='img not found' width='50px' height='50px' />
+          <div>
+            <img src={linkedIn} alt='img not found' width='50px' height='50px' />
+          </div>
         </a>
-        <p>© copyright {year} Todos los derechos reservados</p>
+        <div>
+          <p>© copyright {year} Todos los derechos reservados</p>
+        </div>
       </div>
       <br />
-      <div>
-        <button>
-          <a href='mailto:karloz13m@gmail.com' >Contactame</a>
-        </button>
-      </div>
+      <a href='mailto:karloz13m@gmail.com' >
+        <div>
+          <button>
+            Contactame
+          </button>
+        </div>
+      </a>
       <br />
     </div>
   )
