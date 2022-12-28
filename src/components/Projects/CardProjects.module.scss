@@ -1,0 +1,41 @@
+.div_container {
+  border: solid 3px green;
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 790px;
+}
+
+//! https://www.youtube.com/watch?v=jfMHA8SqUL4 SCSS RESPONSIVE
+
+.div_description {
+  border: solid 3px violet;
+  width: 50vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
+  max-width: 1000px;//* Max tamañp de ancho
+  min-width: 320px;//* Min tamaño de ancho
+  margin: auto;
+}
+
+.description {
+  border: solid 3px yellow;
+  width: 100%;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
+  font-size: 25px;
+}
+
+//? IMAGEN RESPONSIVE
+.div_img {
+  border: solid 3px black;
+  width: 50vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
+  max-width: 1000px;//* Max tamañp de ancho
+  min-width: 320px;//* Min tamaño de ancho
+  margin: auto;
+}
+
+.img {
+  border: solid 3px red;
+  width: 50%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
+  border-radius: 15px;
+}
+//? IMAGEN RESPONSIVE

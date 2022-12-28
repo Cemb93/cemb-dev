@@ -1,0 +1,28 @@
+.container {
+  border: solid 3px red;
+  display: flex;
+  justify-content: center;
+  margin: 15px;
+}
+
+.div_img {
+  border: solid 3px blue;
+  margin: 15px;
+}
+
+.img {
+  border: solid 3px gray;
+  border-radius: 16px;
+  margin: 15px;
+}
+
+.div_description {
+  border: solid 3px green;
+  margin: 15px;
+}
+
+.description {
+  border: solid 3px gray;
+  margin: 15px;
+  font-size: 35px;
+}
