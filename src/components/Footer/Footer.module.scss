@@ -1,40 +1,65 @@
 .footers {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-  gap: 10px;
+  // display: grid;
+  // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  // gap: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: solid gray 3px;
   margin: 15px;
+  padding: 55px;
+}
+
+.div_download_btn {
+  border: solid 3px green;
 }
 
 .download_btn {
-  border: solid green 3px;
-  position: relative;
-  display: inline-block;
   color: red;
-  outline: solid 2px blue;
-  padding: 30px 60px;
-  overflow: hidden;
-  transition: color 1s;
+  background-color: rgba(42, 213, 239, 0.585);
+  margin: 15px 30px;
+  padding: 15px 30px;
+  cursor: pointer;
 }
 
 .download_btn:hover {
   color: green;
 }
 
-.download_btn::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -50px;
-  z-index: -1;
-  width: 150%;
-  height: 100%;
-  background-color: brown;
-  transform: scaleX(0) skewX(35deg);
-  transform-origin: left;
-  transition: transform 1s;
+.div_red_social {
+  border: solid 3px blue;
 }
 
-.download_btn:hover::before {
-  transform: scaleX(1) skewX(35deg);
+.div_img_github {
+  border: solid 3px orange;
+}
+
+.img_github {
+  border: solid 3px orangered;
+  width: 50px;
+  height: 50px;
+}
+
+.div_img_linkedin {
+  border: solid 3px aqua;
+}
+
+.img_linkedin {
+  border: solid 3px aquamarine;
+  width: 50px;
+  height: 50px;
+}
+
+.div_text {
+  border: solid 3px blueviolet;
+}
+.text {
+  border: solid 3px greenyellow;
+}
+
+.div_contact {
+  border: solid 3px violet;
+}
+.contact {
+  border: solid 3px yellow;
 }

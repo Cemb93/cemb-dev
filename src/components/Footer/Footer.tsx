@@ -8,32 +8,32 @@ export const Footer = () => {
   return (
     <div className={style.footers} >
       <a href='is pendding' download='CV PDF' >
-        <div>
+        <div className={style.div_download_btn} >
           <button className={style.download_btn} >
             Descargar CV
           </button>
         </div>
       </a>
       <br />
-      <div>
+      <div className={style.div_red_social} >
         <a href='https://github.com/Cemb93' >
-          <div>
-            <img src={github} alt='img not found' width='50px' height='50px' />
+          <div className={style.div_img_github} >
+            <img src={github} alt='img not found' className={style.img_github} />
           </div>
         </a>
         <a href='https://www.linkedin.com/in/carlos-mart%C3%ADnez-7491776a/' >
-          <div>
-            <img src={linkedIn} alt='img not found' width='50px' height='50px' />
+          <div className={style.div_img_linkedin} >
+            <img src={linkedIn} alt='img not found' className={style.img_linkedin} />
           </div>
         </a>
-        <div>
-          <p>© copyright {year} Todos los derechos reservados</p>
+        <div className={style.div_text} >
+          <p className={style.text} >© copyright {year} Todos los derechos reservados</p>
         </div>
       </div>
       <br />
       <a href='mailto:karloz13m@gmail.com' >
-        <div>
-          <button>
+        <div className={style.div_contact} >
+          <button className={style.contact} >
             Contactame
           </button>
         </div>
