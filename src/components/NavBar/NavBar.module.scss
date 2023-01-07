@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  font-size: 20px;
+  background-color: grey;
+  width: 100%;
+}
+
+.proyect {
+  margin: 0.5rem;
+  color: white;
+  background-color: blue;
+  text-decoration: none;
+}
+
+.skills {
+  margin: 0.5rem;
+  color: white;
+  background-color: green;
+  text-decoration: none;
+}
+
+.contact {
+  margin: 0.5rem;
+  color: white;
+  background-color: red;
+  text-decoration: none;
+}

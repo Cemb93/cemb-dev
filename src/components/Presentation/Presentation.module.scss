@@ -1,28 +1,30 @@
 .container {
-  border: solid 3px red;
+  background-color: aqua;
   display: flex;
-  justify-content: center;
-  margin: 15px;
+  flex-direction: column;
 }
 
 .div_img {
-  border: solid 3px blue;
-  margin: 15px;
+  background-color: yellow;
 }
 
 .img {
-  border: solid 3px gray;
-  border-radius: 16px;
-  margin: 15px;
+  border-radius: 1rem;
+  width: 50%;
+  height: 50%;
+  margin: 1rem;
 }
 
 .div_description {
-  border: solid 3px green;
-  margin: 15px;
+  background-color: greenyellow;
+}
+
+.name {
+  color: green;
 }
 
 .description {
-  border: solid 3px gray;
-  margin: 15px;
-  font-size: 35px;
+  background-color: violet;
+  font-size: 1rem;
+  padding: 0.5rem;
 }

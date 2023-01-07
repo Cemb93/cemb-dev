@@ -1,32 +1,21 @@
-import React, { useState } from 'react'
+// import React, { useState } from 'react'
+import { NavWords } from './NavWords';
+import style from './NavBar.module.scss';
+// import { BsSun, BsMoon } from 'react-icons';
 
 export const NavBar = () => {
-  const [variable, setVariable] = useState("hidden");
-  const handlerOnClick = () => {
-    setVariable(variable === "hidden" ? "" : "hidden");
-  }
   return (
-    <div>
-      {
-        window.matchMedia('').matches ? (
-          <div>
-            <a href="#project" >Projects</a>
-            <a href="#skills" >Skills</a>
-            <a href="#contact" >Contact</a>
-          </div>
-        ): (
-          <div>
-            <button onClick={handlerOnClick} ></button>
-            <div>
-              <ul>
-                <li><a href="#project" >Projects</a></li>
-                <li><a href="#skills" >Skills</a></li>
-                <li><a href="#contact" >Contact</a></li>
-              </ul>
-            </div>
-          </div>
-        )
-      }
+    <div className={style.container} >
+      <a href="#project" className={style.proyect} >
+        <NavWords word="Projects" />
+      </a>
+      <a href="#skills" className={style.skills} >
+        <NavWords word="Skills" />
+      </a>
+      <a href="#contact" className={style.contact} >
+        <NavWords word="Contact" />
+      </a>
+      {/* <BsSun /> */}
     </div>
   )
 }
