@@ -1,18 +1,18 @@
 // import React, { useState } from 'react'
 import { NavWords } from './NavWords';
-import style from './NavBar.module.scss';
 // import { BsSun, BsMoon } from 'react-icons';
 
 export const NavBar = () => {
   return (
-    <div className={style.container} >
-      <a href="#project" className={style.proyect} >
+    // <div className='navbar__container' >
+    <div className='navbar' >
+      <a href="#project" className='navbar__project' >
         <NavWords word="Projects" />
       </a>
-      <a href="#skills" className={style.skills} >
+      <a href="#skills" className='navbar__skills' >
         <NavWords word="Skills" />
       </a>
-      <a href="#contact" className={style.contact} >
+      <a href="#contact" className='navbar__contact' >
         <NavWords word="Contact" />
       </a>
       {/* <BsSun /> */}

@@ -1,15 +1,13 @@
-// import React from 'react';
 import { images } from './Images';
 import { CardSkills } from './CardSkills';
-import style from './Skills.module.scss';
 
 export const Skills = () => {
   return (
-    <div>
+    <div className='skilsContanier' >
       <div>
         <h1><strong>Skills</strong></h1>
       </div>
-      <div className={style.contanier} >
+      <div className='skilsContanier__cards' >
         {
           images?.map((el, idx) => {
             return (

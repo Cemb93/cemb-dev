@@ -1,0 +1,13 @@
+.skilsContanier {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: greenyellow;
+  &__cards {
+    background-color: violet;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}

@@ -1,12 +1,10 @@
-// import React from 'react';
 import { projects } from './EachProject';
 import { ImgProject } from './ImgProject';
 import { InfoProjects } from './InfoProjects';
-import style from './Projects.module.scss';
 
 export const Projects = () => {
   return (
-    <div>
+    <div className='projectsContanier' >
       <div>
         <h1><strong>My Projects</strong></h1>
       </div>
@@ -14,7 +12,7 @@ export const Projects = () => {
         {
           projects?.map((el, idx) => (
             el.id % 2 !== 0 ? (
-              <div className={style.contanier} >
+              <div>
                 <InfoProjects
                   key={idx}
                   name={el.name}
@@ -28,7 +26,7 @@ export const Projects = () => {
                 />
               </div>
             ) : (
-              <div className={style.contanier} >
+              <div>
                 <ImgProject
                   key={idx}
                   image={el.image}

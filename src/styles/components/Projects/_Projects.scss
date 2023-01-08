@@ -1,0 +1,11 @@
+.projectsContanier {
+  background-color: greenyellow;
+  border: solid 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h1 {
+    background-color: white;
+  }
+}

@@ -1,0 +1,39 @@
+.flip {
+  width: 15rem;
+  height: 15rem;
+  margin: 1.5rem 5rem;
+  &__inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 2rem;
+    transition: all 750ms;
+    transform-style: preserve-3d;//* Hace que los elementos HIJOS - front y back permanezcan en el espacio 3D
+    &__front, &__back {
+      position: absolute;//* Poner una tarjeta sobre otra
+      width: 100%;
+      height: 100%;
+      border-radius: 2rem;
+      backface-visibility: hidden;//* Hace que la cara trasera este oculta
+    }
+    &__front {
+      .img {
+        width: 100%;
+        height: 100%;
+        border-radius: 2rem;
+      }
+    }
+    &__back {
+      font-size: 1.4rem;
+      text-align: center;
+      display: grid;
+      place-items: center;
+      background-color: #66bbe8f2;
+      transform: rotateY(180deg);
+    }
+  }
+  &:hover .flip__inner {
+    transform: rotateY(-180deg);
+  }
+}
