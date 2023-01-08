@@ -4,7 +4,7 @@ export const ImgProject = ({ image, urlProject }: { image: string, urlProject: s
     <div>
       <div>
         <a href={urlProject} >
-          <div className="div__img" >
+          <div className="projects_img" >
             <img src={image} alt='Not found' />
           </div>
         </a>

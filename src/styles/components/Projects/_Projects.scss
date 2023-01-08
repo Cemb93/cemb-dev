@@ -1,4 +1,4 @@
-.projectsContanier {
+.projects {
   background-color: greenyellow;
   border: solid 3px;
   display: flex;
@@ -7,5 +7,11 @@
   align-items: center;
   h1 {
     background-color: white;
+  }
+  &__each {
+    background-color: purple;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }

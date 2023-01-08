@@ -1,10 +1,10 @@
-import { projects } from './EachProject';
+import { projects } from './date_projects/EachProject';
 import { ImgProject } from './ImgProject';
 import { InfoProjects } from './InfoProjects';
 
 export const Projects = () => {
   return (
-    <div className='projectsContanier' >
+    <div className='projects' >
       <div>
         <h1><strong>My Projects</strong></h1>
       </div>
@@ -12,7 +12,7 @@ export const Projects = () => {
         {
           projects?.map((el, idx) => (
             el.id % 2 !== 0 ? (
-              <div>
+              <div className='projects__each' >
                 <InfoProjects
                   key={idx}
                   name={el.name}
@@ -26,7 +26,7 @@ export const Projects = () => {
                 />
               </div>
             ) : (
-              <div>
+              <div className='projects__each' >
                 <ImgProject
                   key={idx}
                   image={el.image}
