@@ -1,65 +1,41 @@
-.footers {
-  // display: grid;
-  // grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  // gap: 10px;
+@use '../variables';
+
+.FooterContainer {
+  background: linear-gradient(to left, variables.$Azul, variables.$Verde);
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
-  border: solid gray 3px;
-  margin: 15px;
-  padding: 55px;
-}
-
-.div_download_btn {
-  border: solid 3px green;
-}
-
-.download_btn {
-  color: red;
-  background-color: rgba(42, 213, 239, 0.585);
-  margin: 15px 30px;
-  padding: 15px 30px;
-  cursor: pointer;
-}
-
-.download_btn:hover {
-  color: green;
-}
-
-.div_red_social {
-  border: solid 3px blue;
-}
-
-.div_img_github {
-  border: solid 3px orange;
-}
-
-.img_github {
-  border: solid 3px orangered;
-  width: 50px;
-  height: 50px;
-}
-
-.div_img_linkedin {
-  border: solid 3px aqua;
-}
-
-.img_linkedin {
-  border: solid 3px aquamarine;
-  width: 50px;
-  height: 50px;
-}
-
-.div_text {
-  border: solid 3px blueviolet;
-}
-.text {
-  border: solid 3px greenyellow;
-}
-
-.div_contact {
-  border: solid 3px violet;
-}
-.contact {
-  border: solid 3px yellow;
+  button {
+    background: linear-gradient(to left, rgba(39, 39, 175, 0.787), rgba(52, 169, 52, 0.849));
+    font-size: 1.5em;
+    border-radius: 0.3em;
+    padding: 0.1em;
+    cursor: pointer;
+  }
+  &__social {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.1em;
+    .img {
+      margin: 0.1em;
+      padding: 0.1em;
+      font-size: 2.5em;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      &__icons {
+        &:hover {
+          color: white;
+        }
+      }
+    }
+    .text {
+      font-size: 1.5em;
+      margin: 0.1em;
+      padding: 0.1em;
+    }
+  }
 }

@@ -1,36 +1,40 @@
+@use '../variables';
+
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-  font-size: 20px;
-  background-color: grey;
-  gap: 1%;
-
+  font-size: 30px;
+  background-color: rgb(138, 43, 226);
+  // gap: 1%;
   &__project {
     margin: 0.5rem;
-    color: white;
-    background-color: blue;
+    font-size: 1.3em;
+    color: variables.$Azul;
     text-decoration: none;
     &:hover {
-      background-color: green;
+      // background-color: variables.$Azul;
+      color: white;
     }
   }
   &__skills {
     margin: 0.5rem;
-    color: white;
-    background-color: green;
+    font-size: 1.3em;
+    color: variables.$Verde;
     text-decoration: none;
     &:hover {
-      background-color: blue;
+      // background-color: variables.$Verde;
+      color: white;
     }
   }
   &__contact {
     margin: 0.5rem;
-    color: white;
-    background-color: gray;
+    font-size: 1.3em;
+    color: red;
     text-decoration: none;
     &:hover {
-      background-color: red;
+      // background-color: red;
+      color: white;
     }
   }
 }

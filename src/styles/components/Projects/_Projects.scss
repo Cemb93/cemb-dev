@@ -1,15 +1,16 @@
+@use '../../variables';
+
 .projects {
-  background-color: greenyellow;
-  border: solid 3px;
+  background-color: variables.$Azul;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   h1 {
-    background-color: white;
+    font-size: 3em;
+    margin: 0.5em;
   }
   &__each {
-    background-color: purple;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

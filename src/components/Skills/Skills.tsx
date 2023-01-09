@@ -1,10 +1,10 @@
-import { images } from './Images';
+import { images } from './images_skills/Images';
 import { CardSkills } from './CardSkills';
 
 export const Skills = () => {
   return (
     <div className='skilsContanier' >
-      <div>
+      <div className='Skills' >
         <h1><strong>Skills</strong></h1>
       </div>
       <div className='skilsContanier__cards' >

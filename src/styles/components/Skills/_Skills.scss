@@ -1,10 +1,16 @@
+@use '../../variables';
+
 .skilsContanier {
   display: flex;
   flex-direction: column;
   align-items: center;
-  // background-color: greenyellow;
+  background-color: variables.$Verde;
+  padding: 1em;
+  .Skills {
+    font-size: 1.8em;
+    margin: 0.3em;
+  }
   &__cards {
-    background-color: violet;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

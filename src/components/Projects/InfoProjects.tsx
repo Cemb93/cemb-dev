@@ -7,7 +7,7 @@ export const InfoProjects = (
     <div className="InfoProjects" >
       <div className="InfoProjects__description" >
         <h2>{name}</h2>
-        <p className="InfoProjects__description__text" >{description}</p>
+        <p>{description}</p>
         <a href={urlGit} >
           <div>
             <button>Git Hub</button>
