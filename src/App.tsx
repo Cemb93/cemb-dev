@@ -1,4 +1,4 @@
-import { NavBar } from './components/NavBar/NavBar';
+// import { NavBar } from './components/NavBar/NavBar';
 import { Presentation } from './components/Presentation/Presentation';
 import { Skills } from './components/Skills/Skills';
 import { Projects } from './components/Projects/Projects';
@@ -7,7 +7,7 @@ import { Footer } from './components/Footer/Footer';
 function App() {
   return (
     <div>
-      <NavBar />
+      {/* <NavBar /> */}
       <Presentation />
       <Skills />
       <Projects />

@@ -6,7 +6,7 @@ export const Projects = () => {
   return (
     <div className='projects' >
       <div>
-        <h1><strong>My Projects</strong></h1>
+        <h1><strong>Projects</strong></h1>
       </div>
       <div>
         {
