@@ -1,11 +1,12 @@
 @use '../../variables';
 
 .projects {
-  background-color: variables.$Azul;
+  background: linear-gradient(to left, variables.$Gris, variables.$blanco);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 1.5rem;
   h1 {
     font-size: 3em;
     margin: 0.5em;
@@ -14,5 +15,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 1.5em;
   }
 }

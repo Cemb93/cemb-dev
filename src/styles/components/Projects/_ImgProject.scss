@@ -1,8 +1,7 @@
 //! https://www.youtube.com/watch?v=jfMHA8SqUL4 SCSS RESPONSIVE
 
-/* --------- InfoProjects ---------- */
+/*//? --------- InfoProjects ---------- */
 .InfoProjects {
-  // background-color: blue;
   margin: 0.1em;
   padding: 0.1em;
   display: flex;
@@ -10,7 +9,6 @@
   align-items: center;
   width: 30em;
   &__description {
-    // background-color: gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -20,7 +18,6 @@
       margin: 0.5em;
     }
     p {
-      // background-color: white;
       display: flex;
       justify-content: center;
       align-self: center;
@@ -41,19 +38,18 @@
   }
 }
 
-/* --------- ImgProjects ---------- */
+/*//* --------- ImgProjects ---------- */
 //? IMAGEN RESPONSIVE
 .projects_img {
-  // background-color: yellow;
+  background-color: yellow;
   display: flex;
   justify-content: center;
   width: 50vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
   max-width: 1000px;//* Max tamañp de ancho
   min-width: 320px;//* Min tamaño de ancho
+  margin: 2.5em;
   img {
-    // border: solid 3px red;
-    width: 50%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
-    border-radius: 1em;
-    margin: 0.5em;
+    width: 100%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
+    border-radius: 0.5em;
   }
 }

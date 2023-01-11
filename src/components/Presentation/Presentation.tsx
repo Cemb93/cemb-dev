@@ -1,4 +1,3 @@
-// import imgCarlos from './Images/Carlos.jpeg';
 
 export const Presentation = () => {
   return (
@@ -8,9 +7,12 @@ export const Presentation = () => {
       </div>
       <div className="presentation__description" >
         <h1>Hola! Mi nombre es <b className="presentation__name" >Carlos</b></h1>
-        <h2>Full Stack Developer</h2>
-        <p>Me gusta trabajar en equipo</p>
-        <p>y aprender de nuevas tecnologías</p>
+        <h2>Soy Full Stack Developer</h2>
+        <p>Soy una persona apasionada por el mundo de la tecnología, </p>
+        <p>con un gran interes en seguir aprendiendo cosas nuevas, </p>
+        <p>continuar mejorar mi habilidades técnicas </p>
+        <p>e ir descubriendo nuevas habilidades personales </p>
+        <p>y poder fortalecer las actuales.</p>
       </div>
     </div>
   )

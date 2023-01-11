@@ -1,7 +1,7 @@
 @use '../variables';
 
 .FooterContainer {
-  background: linear-gradient(to left, variables.$Azul, variables.$Verde);
+  background: linear-gradient(to left, variables.$blanco, variables.$Gris);
   display: flex;
   flex-direction: row;
   justify-content: space-around;

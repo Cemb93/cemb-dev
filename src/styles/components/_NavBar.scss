@@ -5,15 +5,13 @@
   flex-direction: row;
   justify-content: flex-end;
   font-size: 30px;
-  background-color: rgb(138, 43, 226);
-  // gap: 1%;
+  background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   &__project {
     margin: 0.5rem;
     font-size: 1.3em;
     color: variables.$Azul;
     text-decoration: none;
     &:hover {
-      // background-color: variables.$Azul;
       color: white;
     }
   }
@@ -23,7 +21,6 @@
     color: variables.$Verde;
     text-decoration: none;
     &:hover {
-      // background-color: variables.$Verde;
       color: white;
     }
   }
@@ -33,7 +30,6 @@
     color: red;
     text-decoration: none;
     &:hover {
-      // background-color: red;
       color: white;
     }
   }
