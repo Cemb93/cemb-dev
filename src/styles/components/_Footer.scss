@@ -1,9 +1,9 @@
 @use '../variables';
+@use '../mixinfunc';
 
 .FooterContainer {
   background: linear-gradient(to left, variables.$blanco, variables.$Gris);
-  display: flex;
-  flex-direction: row;
+  @include mixinfunc.flex-box(row);
   justify-content: space-around;
   align-items: center;
   button {
@@ -14,8 +14,7 @@
     cursor: pointer;
   }
   &__social {
-    display: flex;
-    flex-direction: column;
+    @include mixinfunc.flex-box(column);
     justify-content: center;
     flex-wrap: wrap;
     gap: 0.1em;
@@ -23,7 +22,7 @@
       margin: 0.1em;
       padding: 0.1em;
       font-size: 2.5em;
-      display: flex;
+      @include mixinfunc.flex-box(space-around);
       justify-content: space-around;
       align-items: center;
       &__icons {

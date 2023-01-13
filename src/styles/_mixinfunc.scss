@@ -1,0 +1,5 @@
+//* Esta funcion esta en STYLES _Presentación - _Skills - _Projects
+@mixin flex-box($direction) {
+  display: flex;
+  flex-direction: $direction;
+}

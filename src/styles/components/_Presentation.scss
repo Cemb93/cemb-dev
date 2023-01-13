@@ -1,14 +1,25 @@
 @use '../variables';
+@use '../mixinfunc';
+
+$breakpoints: (
+  sm : 320px,
+  md: 768px,
+  lg : 1024px
+);
+
+@mixin media_sm($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content
+  }
+}
 
 .presentation {
-  display: flex;
-  flex-direction: row;
+  @include mixinfunc.flex-box(row);
   justify-content: center;
   background: linear-gradient(to left, variables.$Gris, variables.$blanco);
   padding: 5rem;
   &__images {
-    display: flex;
-    flex-direction: column;
+    @include mixinfunc.flex-box(column);
     align-self: center;
   }
   &__img {
@@ -20,8 +31,7 @@
     box-shadow: 0 0.5em 0.5em 0 rgba(90, 69, 90, 0.853);
   }
   &__description {
-    display: flex;
-    flex-direction: column;
+    @include mixinfunc.flex-box(column);
     justify-content: center;
     align-items: center;
     h1 {

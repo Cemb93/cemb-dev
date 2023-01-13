@@ -1,8 +1,8 @@
 @use '../../variables';
+@use '../../mixinfunc';
 
 .skilsContanier {
-  display: flex;
-  flex-direction: column;
+  @include mixinfunc.flex-box(column);
   align-items: center;
   background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   padding: 1em;
@@ -12,8 +12,7 @@
     color: variables.$Verde;
   }
   &__cards {
-    display: flex;
-    flex-direction: row;
+    @include mixinfunc.flex-box(row);
     flex-wrap: wrap;
     justify-content: center;
   }

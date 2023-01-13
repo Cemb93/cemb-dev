@@ -1,9 +1,9 @@
 @use '../../variables';
+@use '../../mixinfunc';
 
 .projects {
   background: linear-gradient(to left, variables.$Gris, variables.$blanco);
-  display: flex;
-  flex-direction: column;
+  @include mixinfunc.flex-box(column);
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
@@ -13,8 +13,7 @@
     color: variables.$Azul;
   }
   &__each {
-    display: flex;
-    flex-direction: row;
+    @include mixinfunc.flex-box(row);
     flex-wrap: wrap;
     margin: 1.5em;
   }
