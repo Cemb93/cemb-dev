@@ -5,7 +5,6 @@
   @include mixinfunc.flex-box(column);
   align-items: center;
   background: linear-gradient(to right, variables.$Gris, variables.$blanco);
-  // padding: 1em;
   padding: 5em 14.5em;
   .Skills {
     font-size: 1.8em;
@@ -16,5 +15,36 @@
     @include mixinfunc.flex-box(row);
     flex-wrap: wrap;
     justify-content: center;
+    margin: 0 -15.07rem;
+  }
+}
+
+//* ---------- TABLET 768PX ----------
+@media (min-width: 768px) {
+  .skilsContanier {
+    &__cards {
+      margin: 0 -10.7rem;
+      gap: 11.2px;
+    }
+  }
+}
+
+//* ---------- LAPTOP 1024PX ----------
+@media (min-width: 1024px) {
+  .skilsContanier {
+    &__cards {
+      margin: 0 -12.7rem;
+      gap: 8.2px;
+    }
+  }
+}
+
+//* ---------- LAPTOP 1440PX ----------
+@media (min-width: 1440px) {
+  .skilsContanier {
+    &__cards {
+      margin: 0 -13.9rem;
+      gap: 8.2px;
+    }
   }
 }
