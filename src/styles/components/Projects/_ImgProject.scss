@@ -8,13 +8,11 @@
   justify-content: center;
   align-items: center;
   width: 30em;
-  // border: solid 1px red;
   &__description {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // border: solid 1px red;
     h2 {
       font-size: 2em;
       margin: 0.5em;
@@ -24,7 +22,6 @@
       justify-content: center;
       align-self: center;
       font-size: 1.5em;
-      // margin: 0.5em;
       margin: 2em;
       text-align: center;
     }
@@ -45,17 +42,12 @@
 //* ---------- TABLET 768PX ----------
 @media (min-width: 768px) {
   .InfoProjects {
-    // border: solid 1px blue;
-    // padding: 1.5em 14.5em 0.5em;
     &__description {
-      // border: solid 1px blue;
       h2 {
-        border: solid 1px blue;
         margin: 0.5em 0 0.5em;
       }
       p {
-        border: solid 1px blue;
-        margin: 1.5em;
+        margin: 1em;
       }
     }
   }
@@ -64,21 +56,26 @@
 /*//* --------- ImgProjects ---------- */
 //? IMAGEN RESPONSIVE
 .projects_img {
-  // background-color: yellow;
-  border: solid 1px red;
   display: flex;
   justify-content: center;
   width: 50vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
-  // width: 100vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
   max-width: 1000px;//* Max tamañp de ancho
   min-width: 320px;//* Min tamaño de ancho
-  // margin: 2.5em;
-  // margin: 0 5.5em;
   margin: 1.5em 5.5em;
   img {
-    // width: 100%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
     width: 120%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
     border-radius: 0.5em;
     height: 25vh;
+  }
+}
+
+//* ---------- TABLET 1180PX ----------
+@media (min-width: 1180px) {
+  .projects_img {
+    img {
+      width: 110%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
+      border-radius: 0.5em;
+      height: 50vh;
+    }
   }
 }

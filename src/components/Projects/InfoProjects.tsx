@@ -10,7 +10,7 @@ export const InfoProjects = (
         <p>{description}</p>
         <a href={urlGit} >
           <div>
-            <button>Git Hub</button>
+            <button>Repositorio</button>
           </div>
         </a>
       </div>
