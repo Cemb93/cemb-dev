@@ -5,7 +5,8 @@
   @include mixinfunc.flex-box(column);
   align-items: center;
   background: linear-gradient(to right, variables.$Gris, variables.$blanco);
-  padding: 1em;
+  // padding: 1em;
+  padding: 5em 14.5em;
   .Skills {
     font-size: 1.8em;
     margin: 0.3em;

@@ -1,31 +1,20 @@
 @use '../variables';
 @use '../mixinfunc';
 
-$breakpoints: (
-  sm : 320px,
-  md: 768px,
-  lg : 1024px
-);
-
-@mixin media_sm($breakpoint) {
-  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
-    @content
-  }
-}
-
 .presentation {
-  @include mixinfunc.flex-box(row);
+  //* ---------- MOBILE 320PX ----------
+  @include mixinfunc.flex-box(column);
   justify-content: center;
   background: linear-gradient(to left, variables.$Gris, variables.$blanco);
-  padding: 5rem;
+  padding: 5em 14.5em;
   &__images {
     @include mixinfunc.flex-box(column);
     align-self: center;
   }
   &__img {
     border-radius: 1rem;
-    width: 30%;
-    height: 10%;
+    width: 80wh;
+    height: 30vh;
     margin: 1rem;
     align-self: center;
     box-shadow: 0 0.5em 0.5em 0 rgba(90, 69, 90, 0.853);
@@ -34,19 +23,84 @@ $breakpoints: (
     @include mixinfunc.flex-box(column);
     justify-content: center;
     align-items: center;
+    margin: 1em -13em;
     h1 {
-      font-size: 3rem;
-      margin: 1rem;
+      font-size: 2em;
+      margin: 0.1em;
+      padding: 0.1em;
     }
     h2 {
-      font-size: 2.7rem;
-      margin: 1rem;
+      font-size: 1.8em;
+      margin: 0.1em;
     }
     p {
       font-size: 1.5em;
+      margin: 0.1em;
     }
   }
   &__name {
     color: blue;
+  }
+}
+
+//* ---------- TABLET 768PX ----------
+@media (min-width: 768px) {
+  .presentation {
+    &__img {
+      border-radius: 1rem;
+      width: 30wh;
+      height: 30vh;
+      margin: 1rem;
+    }
+    &__description {
+      h1 {
+        font-size: 2.9rem;
+      }
+      h2 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
+//* ---------- TABLET 1024PX ----------
+@media (min-width: 1024px) {
+  .presentation {
+    @include mixinfunc.flex-box(row);
+    gap: 300px;
+    &__img {
+      border-radius: 1rem;
+      width: 30wh;
+      height: 30vh;
+      margin: -5em;
+    }
+    &__description {
+      padding: 0 2em;
+      h1 {
+        font-size: 2.7em;
+      }
+      h2 {
+        font-size: 2em;
+      }
+      p {
+        padding: 0 0.2em;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+//* ---------- TABLET 1440PX ----------
+@media (min-width: 1440px) {
+  .presentation {
+    &__description {
+      p {
+        padding: 0 6em;
+        font-size: 2em;
+      }
+    }
   }
 }

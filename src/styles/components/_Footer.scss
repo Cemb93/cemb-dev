@@ -6,6 +6,7 @@
   @include mixinfunc.flex-box(row);
   justify-content: space-around;
   align-items: center;
+  padding: 5em 14.5em;
   button {
     background: linear-gradient(to left, rgba(39, 39, 175, 0.787), rgba(52, 169, 52, 0.849));
     font-size: 1.5em;
