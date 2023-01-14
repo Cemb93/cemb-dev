@@ -42,14 +42,19 @@
 //? IMAGEN RESPONSIVE
 .projects_img {
   // background-color: yellow;
+  border: solid 3px red;
   display: flex;
   justify-content: center;
   width: 50vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
+  // width: 100vw;//* View Width --> Da el 70% del ancho de la pantalla, sin importar la pantalla
   max-width: 1000px;//* Max tamañp de ancho
   min-width: 320px;//* Min tamaño de ancho
-  margin: 2.5em;
+  // margin: 2.5em;
+  margin: 0 5.5em;
   img {
-    width: 100%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
+    // width: 100%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
+    width: 120%;//* Este va a ser el 100% de los 75vw y estará entre "max-width" y "min-width"
     border-radius: 0.5em;
+    height: 25vh;
   }
 }
