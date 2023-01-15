@@ -4,38 +4,59 @@
 .FooterContainer {
   background: linear-gradient(to left, variables.$blanco, variables.$Gris);
   @include mixinfunc.flex-box(row);
+  padding: 1.5em 14.5em 0.8em;
   justify-content: space-around;
   align-items: center;
-  padding: 5em 14.5em;
+  flex-wrap: wrap;
   button {
     background: linear-gradient(to left, rgba(39, 39, 175, 0.787), rgba(52, 169, 52, 0.849));
-    font-size: 1.5em;
+    font-size: 1.3em;
     border-radius: 0.3em;
-    padding: 0.1em;
+    padding: 0.3em;
+    margin: 0 -3.6em;
     cursor: pointer;
   }
   &__social {
-    @include mixinfunc.flex-box(column);
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 0.1em;
+    margin: 0.5em -8em 0.5em;
+    text-align: center;
+    font-size: 1.2em;
     .img {
-      margin: 0.1em;
-      padding: 0.1em;
-      font-size: 2.5em;
-      @include mixinfunc.flex-box(space-around);
+      padding: 0.2em 0.1em 0.01em 0.1em;
+      font-size: 2em;
+      @include mixinfunc.flex-box(row);
       justify-content: space-around;
-      align-items: center;
       &__icons {
         &:hover {
           color: white;
         }
       }
     }
-    .text {
-      font-size: 1.5em;
-      margin: 0.1em;
-      padding: 0.1em;
+  }
+}
+
+//* ---------- TABLET 551px - 534----------
+@media (min-width: 534px) {
+  .FooterContainer {
+    flex-wrap: nowrap;
+    padding: 0 16.5em;
+    button {
+      margin: 0 -4.5em;
+      font-size: 0.9em;
+    }
+    &__social {
+      margin: 0.5em 5.2em 1em;
+      .img {
+        margin: 0.1em 1.5em 0.3em;
+      }
+    }
+  }
+}
+
+//* ---------- TABLET 768PX ----------
+@media (min-width: 670px) {
+  .FooterContainer {
+    button {
+      font-size: 1.3em;
     }
   }
 }
