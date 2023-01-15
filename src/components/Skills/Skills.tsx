@@ -3,7 +3,7 @@ import { CardSkills } from './CardSkills';
 
 export const Skills = () => {
   return (
-    <div className='skilsContanier' >
+    <div className='skilsContanier' id='skills' >
       <div className='Skills' >
         <h1><strong>Skills</strong></h1>
       </div>

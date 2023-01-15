@@ -3,34 +3,56 @@
 .navbar {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
-  font-size: 30px;
+  justify-content: space-around;
+  font-size: 2rem;
+  border: solid 1px red;
+  padding: 0.5em 7.4em 0.5em 7.4em;
   background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   &__project {
-    margin: 0.5rem;
-    font-size: 1.3em;
+    border: solid 1px red;
+    margin: 0 0.5em;
     color: variables.$Azul;
     text-decoration: none;
     &:hover {
-      color: white;
+      text-decoration: underline;
     }
   }
   &__skills {
-    margin: 0.5rem;
-    font-size: 1.3em;
+    border: solid 1px red;
+    margin: 0 0.5em;
     color: variables.$Verde;
     text-decoration: none;
     &:hover {
-      color: white;
+      text-decoration: underline;
     }
   }
   &__contact {
-    margin: 0.5rem;
-    font-size: 1.3em;
-    color: red;
+    border: solid 1px red;
+    margin: 0 0.5em;
+    color: gray;
     text-decoration: none;
     &:hover {
-      color: white;
+      text-decoration: underline;
+    }
+  }
+}
+
+//* ---------- TABLET 855PX ----------
+@media (min-width: 855px) {
+  .navbar {
+    justify-content: center;
+    // padding: 0.5em 7.4em 0.5em 7.4em;
+    &__project {
+      border: solid 1px blue;
+      margin: 0 0.5em;
+    }
+    &__skills {
+      border: solid 1px blue;
+      margin: 0 0.5em;
+    }
+    &__contact {
+      border: solid 1px blue;
+      margin: 0 0.5em;
     }
   }
 }

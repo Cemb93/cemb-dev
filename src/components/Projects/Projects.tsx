@@ -4,7 +4,7 @@ import { InfoProjects } from './InfoProjects';
 
 export const Projects = () => {
   return (
-    <div className='projects' >
+    <div className='projects' id='project' >
       <div>
         <h1><strong>Projects</strong></h1>
       </div>
