@@ -12,7 +12,7 @@ export const projects = [
     id: 2,
     name: "Countries",
     description: "SPA de paises en donde puedes ver información de todos los paises, puedes realizar busquedas por paíz, ordenar por order alfabético y según la población, filtrar por actividad y según el continente y puedes crear una actividad a los paises que consideres. Hecho con HTML, CSS, JavaScript, React, Redux, Nodejs, Express, Sequelize y PostgreSQL.",
-    image: './Images/Projects/Countries/Countries_Landing.jpg',
+    image: './Images/Projects/Countries/Countries.jpg',
     urlProject: "",
     urlGit: "https://github.com/Cemb93/Countries",
   },
