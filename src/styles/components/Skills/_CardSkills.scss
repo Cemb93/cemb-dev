@@ -35,9 +35,9 @@
       background-color: #66bbe8f2;
       transform: rotateY(180deg);
     }
-  }
-  &:hover .flip__inner {
-    transform: rotateY(-180deg);
+    &:hover {
+      transform: rotateY(-180deg);
+    }
   }
 }
 

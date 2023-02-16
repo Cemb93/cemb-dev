@@ -18,12 +18,14 @@
     margin: 1rem;
     align-self: center;
     box-shadow: 0 0.5em 0.5em 0 rgba(90, 69, 90, 0.853);
+    animation: left_right 1000ms;
   }
   &__description {
     @include mixinfunc.flex-box(column);
     justify-content: center;
     align-items: center;
     margin: 1em -13em;
+    animation: right_left 1000ms;
     h1 {
       font-size: 2em;
       margin: 0.1em;
@@ -103,5 +105,24 @@
         font-size: 2em;
       }
     }
+  }
+}
+
+/** ---------- ANIMATIONS ---------- */
+@keyframes left_right {
+  0% {
+    transform: translateX(-500px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes right_left {
+  0% {
+    transform: translateX(500px);
+  }
+  100% {
+    transform: translateX(0px);
   }
 }
