@@ -6,6 +6,7 @@
   align-items: center;
   background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   padding: 5em 14.5em;
+  animation: skills 5s infinite alternate linear;
   .Skills {
     font-size: 1.8em;
     margin: 0.3em;
@@ -16,6 +17,34 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 0 -15.07rem;
+  }
+}
+
+@keyframes skills {
+  0% {
+    // border: solid 4px black;
+    // background: rgba(30, 42, 72, 0.75);/*//* OPACIDAD DEL FORMULARIO */
+    background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  }
+  // 25% {
+  //   // border: solid 4px purple;
+  //   // background: rgba(91, 42, 100, 0.75);
+  //   background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  // }
+  50% {
+    // border: solid 4px red;
+    // background: rgba(107, 43, 71, 0.75);
+    background: linear-gradient(to right, variables.$Verde, variables.$blanco);
+  }
+  // 75% {
+  //   // border: solid 4px yellow;
+  //   // background: rgba(120, 120, 50, 0.75);
+  //   background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  // }
+  100% {
+    // border: solid 4px green;
+    // background: rgba(57, 136, 69, 0.75);
+    background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   }
 }
 

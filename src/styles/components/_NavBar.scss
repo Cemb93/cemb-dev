@@ -7,7 +7,8 @@
   font-size: 2rem;
   // border: solid 1px red;
   padding: 0.5em 7.4em 0.5em 7.4em;
-  background: linear-gradient(to right, variables.$Gris, variables.$blanco);
+  // background: linear-gradient(to right, variables.$Gris, variables.$blanco);
+  animation: navbar 5s infinite alternate linear;
   &__project {
     // border: solid 1px red;
     margin: 0 0.5em;
@@ -34,6 +35,34 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+}
+
+@keyframes navbar {
+  0% {
+    // border: solid 4px black;
+    // background: rgba(123, 67, 49, 0.75);/*//* OPACIDAD DEL FORMULARIO */
+    background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  }
+  // 25% {
+  //   // border: solid 4px purple;
+  //   // background: rgba(145, 134, 59, 0.75);
+  //   background: linear-gradient(to right, variables.$Gris, variables.$blanco);
+  // }
+  50% {
+    // border: solid 4px red;
+    // background: rgba(54, 147, 54, 0.75);
+  background: linear-gradient(to right, variables.$Verde, variables.$blanco);
+  }
+  // 75% {
+  //   // border: solid 4px yellow;
+  //   // background: rgba(57, 144, 140, 0.75);
+  // background: linear-gradient(to right, variables.$Gris, variables.$blanco);
+  // }
+  100% {
+    // border: solid 4px green;
+    // background: rgba(65, 75, 171, 0.75);
+  background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   }
 }
 

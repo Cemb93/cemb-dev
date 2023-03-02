@@ -3,7 +3,8 @@ export const Presentation = () => {
   return (
     <div className="presentation" >
       <div className="presentation__images" >
-        <img src='Images/Carlos.png' alt='img not found' className="presentation__img" />
+        {/* <img src='Images/Carlos.png' alt='img not found' className="presentation__img" /> */}
+        <img src='Images/CarlosM.png' alt='img not found' className="presentation__img" />
       </div>
       <div className="presentation__description" >
         <h1>Hola! Mi nombre es <b className="presentation__name" >Carlos</b></h1>

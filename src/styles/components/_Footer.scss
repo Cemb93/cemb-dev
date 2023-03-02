@@ -8,6 +8,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+  animation: footer 5s infinite alternate linear;
   button {
     background: linear-gradient(to left, rgba(39, 39, 175, 0.787), rgba(52, 169, 52, 0.849));
     font-size: 1.3em;
@@ -31,6 +32,34 @@
         }
       }
     }
+  }
+}
+
+@keyframes footer {
+  0% {
+    // border: solid 4px black;
+    // background: rgba(30, 42, 72, 0.75);/*//* OPACIDAD DEL FORMULARIO */
+    background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  }
+  // 25% {
+  //   // border: solid 4px purple;
+  //   // background: rgba(91, 42, 100, 0.75);
+  //   background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  // }
+  50% {
+    // border: solid 4px red;
+    // background: rgba(107, 43, 71, 0.75);
+    background: linear-gradient(to right, variables.$Verde, variables.$blanco);
+  }
+  // 75% {
+  //   // border: solid 4px yellow;
+  //   // background: rgba(120, 120, 50, 0.75);
+  //   background: linear-gradient(to right, variables.$Azul, variables.$blanco);
+  // }
+  100% {
+    // border: solid 4px green;
+    // background: rgba(57, 136, 69, 0.75);
+    background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   }
 }
 

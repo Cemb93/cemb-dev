@@ -11,9 +11,9 @@ export const projects = [
   {
     id: 2,
     name: "Countries",
-    description: "SPA de paises en donde puedes ver información de todos los paises, puedes realizar busquedas por paíz, ordenar por order alfabético y según la población, filtrar por actividad y según el continente y puedes crear una actividad a los paises que consideres. Hecho con HTML, CSS, JavaScript, React, Redux, Nodejs, Express, Sequelize y PostgreSQL.",
+    description: "SPA de paises en donde puedes ver información de todos los paises, puedes realizar busquedas por país, ordenar por order alfabético y según la población, filtrar por actividad y según el continente y puedes crear una actividad a los paises que consideres. Hecho en el Front-End con: HTML, CSS, TypeScript, React, Redux y desde el Back-End con: TypeScript, Nodejs, Express, Sequelize y PostgreSQL.",
     image: './Images/Projects/Countries/Countries.jpg',
-    urlProject: "https://countries-cemb.netlify.app/",
+    urlProject: "https://countries-ts-cemb.netlify.app/",
     urlGit: "https://github.com/Cemb93/Countries",
   },
   // {

@@ -7,6 +7,7 @@
   justify-content: center;
   background: linear-gradient(to left, variables.$Gris, variables.$blanco);
   padding: 5em 14.5em;
+  animation: presentacion 5s infinite alternate linear;
   &__images {
     @include mixinfunc.flex-box(column);
     align-self: center;
@@ -17,7 +18,8 @@
     height: 30vh;
     margin: 1rem;
     align-self: center;
-    box-shadow: 0 0.5em 0.5em 0 rgba(90, 69, 90, 0.853);
+    // box-shadow: 0 0.5em 0.5em 0 rgba(90, 69, 90, 0.853);
+    box-shadow: 0 .5em .5em 0.25em rgba(92, 57, 118, 0.853);
     animation: left_right 1000ms;
   }
   &__description {
@@ -43,6 +45,34 @@
   }
   &__name {
     color: blue;
+  }
+}
+
+@keyframes presentacion {
+  0% {
+    // border: solid 4px black;
+    // background: rgba(30, 42, 72, 0.75);/*//* OPACIDAD DEL FORMULARIO */
+    background: linear-gradient(to left, variables.$Azul, variables.$blanco);
+  }
+  // 25% {
+  //   // border: solid 4px purple;
+  //   // background: rgba(91, 42, 100, 0.75);
+  //   background: linear-gradient(to left, variables.$Azul, variables.$blanco);
+  // }
+  50% {
+    // border: solid 4px red;
+    // background: rgba(107, 43, 71, 0.75);
+    background: linear-gradient(to left, variables.$Verde, variables.$blanco);
+  }
+  // 75% {
+  //   // border: solid 4px yellow;
+  //   // background: rgba(120, 120, 50, 0.75);
+  //   background: linear-gradient(to left, variables.$Azul, variables.$blanco);
+  // }
+  100% {
+    // border: solid 4px green;
+    // background: rgba(57, 136, 69, 0.75);
+    background: linear-gradient(to left, variables.$Gris, variables.$blanco);
   }
 }
 

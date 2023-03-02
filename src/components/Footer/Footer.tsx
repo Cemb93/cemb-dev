@@ -4,11 +4,11 @@ export const Footer = () => {
   const year = new Date().getFullYear();
   return (
     <div className="FooterContainer" id="contact" >
-      <a href='is pendding' download='CV PDF' >
+      {/* <a href='is pendding' download='CV PDF' >
         <button>
           Descargar CV
         </button>
-      </a>
+      </a> */}
       <div className="FooterContainer__social" >
         <div className="img" >
           <a href='https://github.com/Cemb93' className="img__icons" >

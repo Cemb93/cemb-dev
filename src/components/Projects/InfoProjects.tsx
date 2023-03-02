@@ -8,11 +8,11 @@ export const InfoProjects = (
       <div className="InfoProjects__description" >
         <h2>{name}</h2>
         <p>{description}</p>
-        <a href={urlGit} >
+        {/* <a href={urlGit} >
           <div>
             <button>Repositorio</button>
           </div>
-        </a>
+        </a> */}
       </div>
     </div>
   );
