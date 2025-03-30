@@ -9,6 +9,15 @@
   padding: 0.5em 7.4em 0.5em 7.4em;
   // background: linear-gradient(to right, variables.$Gris, variables.$blanco);
   animation: navbar 5s infinite alternate linear;
+  &__experience {
+    // border: solid 1px red;
+    margin: 0 0.5em;
+    color: variables.$Red;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
   &__project {
     // border: solid 1px red;
     margin: 0 0.5em;
@@ -71,6 +80,10 @@
   .navbar {
     justify-content: center;
     // padding: 0.5em 7.4em 0.5em 7.4em;
+    &__experience {
+      // border: solid 1px blue;
+      margin: 0 0.5em;
+    }
     &__project {
       // border: solid 1px blue;
       margin: 0 0.5em;
