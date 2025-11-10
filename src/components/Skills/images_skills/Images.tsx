@@ -17,31 +17,31 @@ export const images: ({
   },
   {
     name: "MongoDb",
-    img: './Images/Technologies/MongoDb.png',
+    img: './Images/1_tech_DB-MONGO.png',
   },
   {
     name: "PosgreSQL",
-    img: './Images/Technologies/PostgreSQL.png',
+    img: './Images/1_tech_DB-POSTGRES.png',
   },
   {
     name: "Sequelize",
-    img: './Images/Technologies/Sequelize.png',
+    img: './Images/2_tech_ORM-SEQUELIZE.png',
   },
   {
     name: "NodeJS",
-    img: './Images/Technologies/NodeJs.png',
+    img: './Images/3_tech_BACK-NODEJS.png',
   },
   {
     name: "Express",
-    img: './Images/Technologies/ExpressJs.png',
+    img: './Images/3_tech_BACK-EXPRESS.png',
   },
   {
     name: "TypeScript",
-    img: './Images/Technologies/TypeScript.png',
+    img: './Images/3_tech_BACK-TYPESCRIPT.png',
   },
   {
     name: "JavaScript",
-    img: './Images/Technologies/JavaScript.png',
+    img: './Images/3_tech_BACK-JAVASCRIPT.png',
   },
   {
     name: "Postman",
@@ -49,15 +49,15 @@ export const images: ({
   },
   {
     name: "React",
-    img: './Images/Technologies/React.png',
+    img: './Images/4_tech_FRONT-REACT.png',
   },
   {
     name: "Redux",
-    img: './Images/Technologies/Redux.png',
+    img: './Images/4_tech_FRONT-REDUX.png',
   },
   {
     name: "Next",
-    img: './Images/Technologies/Next.png',
+    img: './Images/4_tech_FRONT-NEXT.png',
   },
   {
     name: "Sass",
@@ -65,11 +65,11 @@ export const images: ({
   },
   {
     name: "CSS",
-    img: './Images/Technologies/CSS.png',
+    img: './Images/4_tech_FRONT-CSS.png',
   },
   {
     name: "HTML",
-    img: './Images/Technologies/HTML.png',
+    img: './Images/4_tech_FRONT-HTML.png',
   },
   {
     name: "Git",
