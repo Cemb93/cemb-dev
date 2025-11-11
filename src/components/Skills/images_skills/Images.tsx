@@ -16,6 +16,18 @@ export const images: ({
     img: 'https://kinsta.com/es/wp-content/uploads/sites/8/2018/03/panel-de-control-de-cpanel-1.png',
   },
   {
+    name: "Oracle Cloud",
+    img: './Images/1_tech_OCI.png',
+  },
+  {
+    name: "Git",
+    img: 'https://matiasarevalo.com/wp-content/uploads/2024/07/git.jpg',
+  },
+  {
+    name: "GitHub",
+    img: 'https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg',
+  },
+  {
     name: "MongoDb",
     img: './Images/1_tech_DB-MONGO.png',
   },
@@ -26,6 +38,10 @@ export const images: ({
   {
     name: "Sequelize",
     img: './Images/2_tech_ORM-SEQUELIZE.png',
+  },
+  {
+    name: "Mongoose",
+    img: './Images/2_tech_ODM-MONGOOSE.png',
   },
   {
     name: "NodeJS",
@@ -52,12 +68,12 @@ export const images: ({
     img: './Images/4_tech_FRONT-REACT.png',
   },
   {
-    name: "Redux",
-    img: './Images/4_tech_FRONT-REDUX.png',
-  },
-  {
     name: "Next",
     img: './Images/4_tech_FRONT-NEXT.png',
+  },
+  {
+    name: "Redux",
+    img: './Images/4_tech_FRONT-REDUX.png',
   },
   {
     name: "Sass",
@@ -70,13 +86,5 @@ export const images: ({
   {
     name: "HTML",
     img: './Images/4_tech_FRONT-HTML.png',
-  },
-  {
-    name: "Git",
-    img: 'https://matiasarevalo.com/wp-content/uploads/2024/07/git.jpg',
-  },
-  {
-    name: "GitHub",
-    img: 'https://cdn.prod.website-files.com/5f5a53e153805db840dae2db/64e79ca5aff2fb7295bfddf9_github-que-es.jpg',
   },
 ];
